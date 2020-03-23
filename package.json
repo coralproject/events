@@ -1,0 +1,26 @@
+{
+  "name": "@coralproject/events",
+  "version": "1.0.0",
+  "description": "Coral Events SDK for interacting with Events from Coral.",
+  "main": "lib/index.js",
+  "author": "The Coral Project",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "prepublish": "tsc",
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "test": "jest"
+  },
+  "files": [
+    "/lib"
+  ],
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.3",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
+}
