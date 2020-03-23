@@ -1,5 +1,7 @@
 # @coralproject/events
 
+[![npm version](https://badge.fury.io/js/%40coralproject%2Fevents.svg)](https://badge.fury.io/js/%40coralproject%2Fevents)
+
 This is a library that can be used to validate event requests from
 [Coral](https://github.com/coralproject/talk).
 
