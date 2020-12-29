@@ -16,9 +16,9 @@ const parsedBody = {
   createdAt: "2020-03-23T21:48:46.797Z",
   data: {
     storyID: "09f72dc9-be0f-4e80-afa8-3608b0975a1b",
-    storyURL: "http://localhost:8080/"
+    storyURL: "http://localhost:8080/",
   },
-  type: "STORY_CREATED"
+  type: "STORY_CREATED",
 };
 const sig =
   "sha256=35f864c773be328ad4a57cd8e1d5ca17a4fc9e5cfce462c8e5f470224264836e";

@@ -1,4 +1,4 @@
-const crypto = require("crypto");
+import crypto from "crypto";
 
 function validate(secret: string, body: string, sig: string) {
   // Step 1: Extract signatures from the header.
@@ -6,7 +6,7 @@ function validate(secret: string, body: string, sig: string) {
     // Split the header by `,` to get a list of elements.
     .split(",")
     // Split each element by `=` to get a prefix and value pair.
-    .map(element => element.split("="))
+    .map((element) => element.split("="))
     // Grab all the elements with the prefix of `sha256`.
     .filter(([prefix]) => prefix === "sha256")
     // Grab the value from the prefix and value pair.
@@ -25,7 +25,7 @@ function validate(secret: string, body: string, sig: string) {
   // Step 4: Compare signatures.
   if (
     // For each of the signatures on the request...
-    !signatures.some(signature =>
+    !signatures.some((signature) =>
       // Compare the expected signature to the signature on in the header. If at
       // least one of the match, we should continue to process the event.
       crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expected))
